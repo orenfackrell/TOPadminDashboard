@@ -8,24 +8,11 @@ Page layout & global styling
     --clr-fuchsia-200: #f5d0fe;
     --clr-fuchsia-300: #f0abfc;
     --clr-fuchsia-400: #e879f9;
-    --clr-fuchsia-500: #d946ef;
-    --clr-fuchsia-600: #c026d3;
-    --clr-fuchsia-700: #a21caf;
-    --clr-fuchsia-800: #86198f;
-    --clr-fuchsia-900: #701a75;
     --clr-fuchsia-950: #4a044e;
 
-    --clr-emerald-50: #ecfdf5;
-    --clr-emerald-100: #d1fae5;
-    --clr-emerald-200: #a7f3d0;
     --clr-emerald-300: #6ee7b7;
     --clr-emerald-400: #34d399;
-    --clr-emerald-500: #10b981;
-    --clr-emerald-600: #059669;
-    --clr-emerald-700: #047857;
-    --clr-emerald-800: #065f46;
-    --clr-emerald-900: #064e3b;
-    --clr-emerald-950: #022c22;
+
 
     --clr-white: #fff; 
     --clr-black: #000;
@@ -200,7 +187,7 @@ Content-announcements grid layout & styling
     grid-template-rows: 20px 1fr;
     grid-area: 2 / 3 / 3 / 6;
     padding: 1rem; 
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .announcements-heading {
