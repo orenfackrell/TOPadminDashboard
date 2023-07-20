@@ -37,14 +37,19 @@ Page layout & global styling
     font-family: 'Readex Pro';
 }
 
-body {
+body, 
+h2,
+h4, 
+h5, 
+p {
     padding: 0;
+    margin: 0;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 10rem 2fr 2fr;
+    grid-template-rows: 10rem 1fr 1fr;
 }
 
 /*
@@ -79,10 +84,6 @@ Header grid layout & styling
     grid-area: 2 / 1 / 2 / 2;
 }
 
-h2 {
-    margin: 0;
-}
-
 .header-btn-container {
     display: grid;
     align-items: center;
@@ -97,6 +98,7 @@ h2 {
     height: fit-content;
     padding: 0.75rem 1.5rem;
 }
+
 /*
 Sidebar grid layout & styling
 */
@@ -133,15 +135,59 @@ Content grid layout & styling
 
 .content-projects {
     display: grid;
-    grid-template-columns: repeat(2, 20rem);
-    grid-template-rows: repeat(3, 20rem);
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: 20px 10rem 10rem 10rem;
+    gap: 1rem;
     grid-area: 2 / 2 / 4 / 5;
 }
 
+.projects-header {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.project {
+    display: grid;
+    grid-template-rows: 20px 1fr 20px;
+    padding: 0.5rem;
+}
+
+.card-icons {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 1rem);
+    gap: 0.8rem;
+}
+
+/*
+Content-announcements grid layout & styling
+*/
 
 .content-announcements {
+    display: grid;
+    grid-template-rows: 20px 1fr;
     grid-area: 2 / 3 / 3 / 6;
+    margin-right: 2rem;
 }
+
+.announcements-cards {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(3, 5rem);
+    padding: 1rem; 
+}
+
+.separator {
+    border: 1px solid var(--clr-black);
+}
+
+.announcement-text {
+    margin-bottom: 0.5rem;
+}
+
+/*
+Content-trending grid layout & styling
+*/
 
 .content-trending {
     grid-area: 3 / 3 / 4 / 6;
